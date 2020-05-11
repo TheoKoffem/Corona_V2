@@ -1,0 +1,244 @@
+body .interface .interface-middle .stats .stats-bot,
+body .title h1 {
+    text-transform: uppercase
+}
+
+body .interface .interface-middle .stats .stats-top,
+body .interface .interface-middle .faq a,
+body .interface .interface-top {
+    text-align: center
+}
+
+body .interface .interface-middle .stats .stats-top h1,
+body {
+    margin: 0;
+    padding: 0
+}
+
+body .interface .interface-middle .basic-info .symptoms ul {
+    display: inline-block
+}
+
+body .interface .interface-middle .faq .button-inverted,
+body .interface .interface-middle .faq .button,
+body .interface .interface-middle,
+body .interface .interface-top .infobutton {
+    -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, .4);
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, .4)
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 177, 66, .7)
+    }
+    70% {
+        box-shadow: 0 0 0 100px rgba(255, 177, 66, 0)
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 177, 66, 0)
+    }
+}
+
+body {
+    background-color: #add8e6;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden
+}
+
+body .title {
+    width: 100%;
+    position: fixed
+}
+
+body .title h1 {
+    font-family: "Yantramanav", sans-serif;
+    color: #fff
+}
+
+.HeaderHTML {
+    visibility: hidden;
+}
+
+body .title h1 span {
+    color: #e67221;
+    font-weight: bold
+}
+
+body .interface {
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    transition: all .5s ease;
+    max-height: 100vh;
+}
+
+body .interface .interface-top {
+    width: 100%
+}
+
+body .interface .interface-top .pulse {
+    box-shadow: 0 0 0 0 #ffb142;
+    animation: pulse 2s infinite
+}
+
+body .interface .interface-top .infobutton {
+    color: #666;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 3%;
+    transition: all .3s ease;
+    position: relative;
+    z-index: 3;
+    background-color: #fff
+}
+
+body .interface .interface-top .infobutton:hover {
+    cursor: pointer;
+    padding-bottom: 10px
+}
+
+body .interface .interface-top .infobutton .active {
+    transform: rotate(180deg)
+}
+
+body .interface .interface-middle {
+    background-color: #fff;
+    margin: 0;
+    padding-top: 30px;
+    border: 1px solid #b2b2b2;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    line-height: 35px;
+    padding-bottom: 20px
+}
+
+body .interface .interface-middle .website-info {
+    border-bottom: 1px solid #e67221;
+    margin-bottom: 20px;
+    padding-bottom: 2px
+}
+
+body .interface .interface-middle .website-info span {
+    color: #e67221;
+    font-weight: bold
+}
+
+body .interface .interface-middle .website-info h3 {
+    color: #666;
+    font-size: 20px;
+    margin-left: 2%
+}
+
+body .interface .interface-middle .basic-info {
+    line-height: 20px
+}
+
+body .interface .interface-middle .basic-info .symptoms {
+    margin-top: 10px
+}
+
+body .interface .interface-middle .faq a {
+    width: 30%;
+    padding-right: 10px
+}
+
+body .interface .interface-middle .faq a:hover {
+    text-decoration: none
+}
+
+body .interface .interface-middle .faq .button {
+    background-color: #e67221;
+    color: #fff;
+    padding: 10px;
+    transition: all .3s ease;
+    border: 2px solid transparent
+}
+
+body .interface .interface-middle .faq .button:hover {
+    background-color: #fff;
+    color: #e67221;
+    border: 2px solid #e67221
+}
+
+body .interface .interface-middle .faq .button-inverted {
+    background-color: #fff;
+    color: #e67221;
+    padding: 10px;
+    transition: all .3s ease;
+    border: 2px solid transparent
+}
+
+body .interface .interface-middle .faq .button-inverted:hover {
+    background-color: #e67221;
+    color: #fff;
+    border: 2px solid #fff
+}
+
+body .interface .interface-middle .stats {
+    margin-left: 2%;
+    margin-right: 2%
+}
+
+body .interface .interface-middle .stats .stats-top {
+    border-bottom: 1px solid #e67221
+}
+
+body .interface .interface-middle .stats .stats-bot {
+    padding-top: 20px
+}
+
+body .interface .interface-middle .stats .stats-bot span {
+    color: #e67221;
+    font-weight: bold
+}
+
+body .interface .interface-middle .stats .stats-bot .icon {
+    width: 15%;
+    margin-top: -7px
+}
+
+body .interface .interface-middle .stats .stats-bot .fa-chart-line {
+    color: #e67221
+}
+
+body .interface .interface-middle .stats .graph {
+    border: 1px solid #000;
+    margin-top: 20px;
+    height: 265px
+}
+
+body .interface .interface-middle .twitter-widget {
+    max-height: 400px;
+    overflow-y: scroll
+}
+
+body .interface .interface-bottom {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    background-color: #fff;
+    margin: 0;
+    color: #666;
+    font-weight: bold;
+    text-align: center
+}
+
+body .interface .interface-bottom hr {
+    background-color: #e67221;
+    border: none;
+    height: 1px
+}
+
+body .interface .interface-bottom span {
+    color: #e67221
+}
+
+body .show {
+    bottom: 0px !important
+}
+
+
+/*# sourceMappingURL=style.css.map */

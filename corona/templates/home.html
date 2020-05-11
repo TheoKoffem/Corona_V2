@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>COVID-19 Status</title>
+    <link rel="icon" type="image/png" href="/static/img/favicon.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/37e2a8fe9a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Yantramanav:900&display=swap" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row title d-flex justify-content-center align-items-center">
+        <div>
+            <h1><span>covid</span>stat.us</h1>
+        </div>
+    </div>
+    <div class="row interface">
+        <div class="row interface-top d-flex justify-content-center">
+            <div class="infobutton pulse">
+                <i class="fas fa-caret-up arrow"></i>
+            </div>
+        </div>
+        <div class="row interface-middle d-flex justify-content-center">
+            <div class="col-lg-4">
+                <div class="row website-info d-flex align-items-center">
+                    <h2><span>Daily update</span> at:</h2>
+                    <h3> 14:30 UTC +1</h3>
+                </div>
+                <div class="row basic-info">
+                    <h4>General information about the novel corona-virus.</h4>
+                    <p>The novel corona-virus (COVID-19), is a fast spreading virus with mild symptoms for most people. It has an incubation period of 5.1 days and after 11.5 days symptoms will start to appear. During the incubation period it is possible
+                        (but uncommon) to infect other people, but it is during the period when a person is showing symptoms that they will spread the disease the most. The mortality-rate is 3.4%
+                    </p>
+                    The symptoms are as following:
+                    <div class="symptoms">
+                        <ul>
+                            <li>Fever</li>
+                            <li>Fatigue</li>
+                            <li>Dry cough</li>
+                            <li>Shortness of breath</li>
+                            <li>Sore throat*</li>
+                        </ul>
+                        <ul>
+                            <li>Runny nose*</li>
+                            <li>Sneezing*</li>
+                            <li>Diarrhea*</li>
+                            <li>Decreased kidneys function*</li>
+                            <li>Decreased white blood cells*</li>
+                        </ul>
+                    </div>
+                    *Uncommon
+                </div>
+                <div class="row faq d-flex align-items-center">
+                    <a href="https://www.rivm.nl/coronavirus-covid-19/actueel">
+                        <div class="button">What can you do?</div>
+                    </a>
+                    <a href="https://www.rivm.nl/coronavirus/covid-19/vragen-antwoorden">
+                        <div class="button-inverted">Contact &nbsp; <i class="far fa-envelope"></i></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 stats">
+                <div class="row stats-top">
+                    <h1>World <i class="fas fa-globe-europe"></i></h1>
+                </div>
+                <div class="row stats-bot">
+                    <div class="col-lg-4">
+                        Infected <img class="icon" src="/static/img/favicon.png" alt="biohazard"><br>
+                        <span>//</span> 4,12M
+                        <!--Dynamische data hier [Geinfecteerde] -->
+                    </div>
+                    <div class="col-lg-4">
+                        Deaths <img class="icon" src="/static/img/skull.png" alt="skull"><br>
+                        <span>//</span> 283K
+                        <!--Dynamische data hier [Doden] -->
+                    </div>
+                    <div class="col-lg-4">
+                        Recovered&nbsp; <i class="fas fa-chart-line"></i><br>
+                        <span>//</span> 1,42M
+                        <!--Dynamische data hier [Groeifactor] -->
+                    </div>
+                </div>
+                <div class="row graph">
+                    <div class="col-lg-12 d-flex justify-content-center">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="twitter-widget">
+                    <a class="twitter-timeline" href="https://twitter.com/rivm?ref_src=twsrc%5Etfw">Tweets by rivm</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+        <div class="row interface-bottom d-flex justify-content-center align-items-center">
+            <div class="col-lg-3">
+                <hr>
+            </div>
+            <div class="col-lg-2">
+                By: <span>Theo Koffeman</span> & <span>Marnix Elling</span>
+            </div>
+            <div class="col-lg-3">
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%;height: 94vh;top: 56px;position: absolute;z-index: -100;"><iframe width="100%" height="100%" src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+    <br />
+    <!-- script links -->
+    <script src="/static/js/interface.js"></script>
+</body>
+
+</html>
